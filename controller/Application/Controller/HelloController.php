@@ -15,6 +15,6 @@ class HelloController extends AbstractActionController
         $message = $this->params()->fromQuery('message', 'hello');
 
         // Pass variables to the view.
-        return new ViewModel(['message' => $message]);
+        return new ViewModel(['message' => 'welcome']);
     }
 }
